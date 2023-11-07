@@ -11,9 +11,9 @@ namespace Prueba.Servicios
         public string menu()
         {
             Console.WriteLine("-------------------------");
-            Console.WriteLine("- ¿Repetir operación? -");
-            Console.WriteLine("- S = SI            -");
-            Console.WriteLine("**************************");
+            Console.WriteLine("- ¿Repetir operación?");
+            Console.WriteLine("- S -----------> SI");
+            Console.WriteLine("-------------------------");
             string sigo = Console.ReadLine();
             return sigo;
 

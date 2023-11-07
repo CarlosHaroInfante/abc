@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 
 namespace Prueba.Servicios
 {
@@ -11,25 +13,31 @@ namespace Prueba.Servicios
         public bool Bisiesto(int any)
         {
             bool bisiesto = true;
-            Console.WriteLine(any);
+
 
 
 
             if (any % 4 == 0)
             {
+                Console.WriteLine("Divisible entre 4");
                 
-            }
-            if (any % 100 == 0)
-            {
-                
-            }
-            if (any % 400 == 0)
-            {
-                Console.WriteLine("El año es Bisiesto");
 
-            }
+                if (any % 100 == 0)
+                {
+                    Console.WriteLine("Divisible entre 100");
 
+                    
+                     if (any % 400 == 0)
 
+                     {  
+                      Console.WriteLine("Es bisiesto");  
+
+                     }
+                }
+                bisiesto = true;
+            }                   
+                    
+            
 
 
             else
@@ -38,6 +46,8 @@ namespace Prueba.Servicios
                 bisiesto = false;
 
             }
+
+            
 
             return bisiesto;
 

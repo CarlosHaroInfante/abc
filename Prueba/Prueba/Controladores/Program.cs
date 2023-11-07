@@ -21,7 +21,7 @@ class Program
 
             int mesElegido = menu.Mes();
             int anyoElegido = menu.Año(); 
-            bool bisiesto = Bisiesto.Bisiesto(mesElegido); 
+            bool bisiesto = Bisiesto.Bisiesto(anyoElegido); 
 
             if (bisiesto)
             {
@@ -31,7 +31,7 @@ class Program
                     Console.WriteLine("Nº de dias 31 ");
                 }
 
-                if (mesElegido is 4 or 6 or 9 or 11)
+               if (mesElegido is 4 or 6 or 9 or 11)
                 {
                     Console.WriteLine("Nº de dias 30 ");
                 }
